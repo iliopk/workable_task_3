@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Movies</title>
+   </head>
+   <body>
+       <h1>Hi!</h1>
+       <table style="width:100%">
+           <tr>
+             <th>ID</th>
+             <th>Original Title</th>
+             <th>Title</th>
+             <th>Overview</th>
+            </tr>
+           {% for movie in movies %}
+            <tr>
+              {% for m in movie %}
+              <td> {{m}}</td>
+              {% endfor %}
+             </tr>
+            {% endfor %}
+       </table>
+   </body>
+</html>
